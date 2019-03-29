@@ -1,0 +1,82 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Regestraion</title>
+    <style>
+        *{
+            padding:0px;
+            margin:0px
+        }
+        header
+        {
+            background-color : black;
+            color : white;
+            text-align: center;
+            height:80px;
+            font-size:80px ;
+                
+        }
+        footer
+        {
+            background-color : black;
+            color : white;
+            text-align: center;
+            height:80px;
+            font-size:20px 
+        }
+        nav
+        {
+            background-color : gray;
+            color : black;
+            height:40px;
+            font-size:20px 
+        }
+         .Navigation
+         {
+             background-color:gray;
+             color:white;
+             text-align:center;
+         }
+        img
+        {         
+            height: 24px;
+            margin-top: 1px;
+            background-color:gray
+        }
+    </style>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+    <header>
+            You are AWESOME 
+    </header>
+
+        <nav>
+            Hellow My Friend. What Do you want?
+            <div class="Navigation">
+                <asp:label ID="Home" runat="server" Text="Home"></asp:label>&nbsp;&nbsp;
+                <asp:label ID="History" runat="server" Text="History"></asp:label>&nbsp;&nbsp;
+                <asp:Label ID="About" runat="server" Text="About"></asp:Label>&nbsp;&nbsp;
+                <asp:label ID="Help" runat="server" Text="Help"></asp:label>&nbsp;&nbsp;
+            </div>
+        </nav><br />
+        <asp:ContentPlaceHolder ID="PlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        <br />
+        <br />
+    <br />
+    <footer>
+        &copy copy Right with (.......)<br />
+        Contact US<br />
+        <img src="Imgs\Facebook.png"/>
+        <img src="Imgs\Twitter.png"/>
+        <img src="Imgs\Gmail.png"/>    
+    </footer>
+    </form>
+</body>
+</html>
